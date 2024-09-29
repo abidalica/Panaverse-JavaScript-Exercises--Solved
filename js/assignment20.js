@@ -2,8 +2,9 @@
 
 let countries = ["Canada", "Japan", "Brazil", "Australia", "Germany", "South Africa", "India", "France", "Mexico", "Italy"];
 
-console.log("List of 10 Countries:");
+console.log("List of 10 Countries:\n");
 
-for (let i = 0; i < countries.length; i++) {    
-    console.log(`${i+1}\t${countries[i]}`)    
+for (let country of countries.entries()) {
+    console.log(`${country[0] + 1}\t${country[1]}`);
 }
+

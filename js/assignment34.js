@@ -3,20 +3,18 @@
 let pizzasList = ["Margherita", "Pepperoni", "BBQ Chicken", "Hawaiian", "Vegetarian"];
 
 console.log("Pizza names:");
-for (let i = 0; i < pizzasList.length; i++) {
-    console.log(`${pizzasList[i]}`);    
-}
+
+pizzasList.forEach(pizza => {
+    console.log(`${pizza}`);
+})
 
 console.log("\nPizza names with a statement:");
-for (let i = 0; i < pizzasList.length; i++) {
-    console.log(`I like ${pizzasList[i]} pizza.`);    
-}
+pizzasList.forEach(pizza => {
+    console.log(`I like ${pizza} pizza.`)
+});
 
-console.log("\nStatement about pizzas:");
-console.log(`List of Pizza Types I Like:
-I really like Margherita pizza.
-I really like Pepperoni pizza.
-I really like BBQ Chicken pizza.
-I really like Hawaiian pizza.
-I really like Vegetarian pizza.
-I really love pizza`);
+console.log(`\nList of Pizza Types I Like:`)
+pizzasList.forEach(pizza => {
+    console.log(`I really like ${pizza} pizza.`)
+});
+console.log(`I really love pizza`);

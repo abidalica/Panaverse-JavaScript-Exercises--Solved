@@ -2,24 +2,23 @@
 
 // assignment # 15
 
-let guestList = ["Alan Turing", "Ada Lovelace","Elon Musk"];
+let guestList = ["Alan Turing", "Ada Lovelace", "Albert Einstein"];
 
-// replace last name on the list with a new name.
-guestList[guestList.length - 1] = "Albert Einstein";
 
-// assignment # 16
-// inform that bigger table is available
-console.log(`We are delightful to inform you that THREE more guest are coming.`);
+console.log(`Hello everybody, we just found a bigger table.`);
 
-// add a name at the begining
+// add a new guest at the begining
 guestList.unshift("Nikola Tesla");
 
 // add a name in the middle
 let centerOfArray = guestList.length / 2;
-guestList.splice(centerOfArray,0,"Steve Jobs");
+
+guestList.splice(centerOfArray, 0, "Steve Jobs");
 
 // add a name at the end
 guestList.push("Bill Gates");
+
+console.log(`Three more guest will be joining us at the dinner.`)
 
 // print out msgs
 console.log(`${guestList[0]}, I’d be honored if you could join me for dinner.`);

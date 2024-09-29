@@ -2,8 +2,6 @@
 
 let name = "\n\tElon Musk\t";
 
-console.log(name)
-
 name = name.trim();
 
 console.log(name)

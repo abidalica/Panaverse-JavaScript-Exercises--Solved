@@ -2,8 +2,8 @@
 
 let listOfAnimals = ["dog", "cat", "rabbit"];
 
-for (let i = 0; i < listOfAnimals.length; i++) {   
-    console.log(`A ${listOfAnimals[i]} would make a good pet.`)
-}
+listOfAnimals.forEach(animal => {
+    console.log(`A ${animal} would make a good pet.`)
+});
 
 console.log("\nAny of these animals would make a great pet!");
